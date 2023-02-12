@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@200;400;600&family=Work+Sans:wght@200;300;400;500;600&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 15px;
+  gap: 2.5rem;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 3.4vh; */
+}
+
+.title-1 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.title-2 {
+  color: hsl(234, 12%, 34%);
+}
+
+.dsc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.8rem;
+  /* font-size: 1.48vh; */
+  color: hsl(229, 6%, 66%);
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.left,
+.right,
+.upper,
+.lower {
+  padding: 1rem;
+  width: 20rem;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 1%;
+  box-shadow: 1px 10px 15px 0px hsla(209, 41%, 75%, 0.521);
+}
+
+.left {
+  border-top: solid 4px hsl(180, 62%, 55%);
+}
+.right {
+  border-top: solid 4px hsl(212, 86%, 64%);
+}
+.upper {
+  border-top: solid 4px hsl(0, 78%, 62%);
+}
+.lower {
+  border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+.explain {
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1118px) {
+  .center {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .center {
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .title {
+    font-size: 1.75rem;
+  }
+  .dsc {
+    display: block;
+    font-size: 0.8rem;
+  }
+}
